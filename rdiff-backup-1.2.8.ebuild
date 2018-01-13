@@ -28,10 +28,3 @@ python_install_all() {
         distutils-r1_python_install_all
 }
 
-src_unpack() {
-	unpack ${A}
-	if [ ! -d "${S}" ]; then
-		# shits boomerangin'
-		mv /var/tmp/portage/app-backup/rdiff-backup-1.2.8/work/rdiff-backup-r1-2-8/rdiff-backup $S
-	fi
-}
